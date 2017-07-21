@@ -1,19 +1,19 @@
 package sbauth.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by quchy on 21/07/2017.
  * App Controller class
  */
 
-@RestController
-public class HomeController {
+@Controller
+public class StaticController {
 
 
     @RequestMapping("/")
-    public String home() {
-        return "Home, sweet home!";
+    public String index() {
+        return "index.html";
     }
 }
