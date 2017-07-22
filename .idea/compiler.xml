@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sb-auth-srv" />
+        <module name="sb-auth-ui" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sb-auth" target="1.5" />
+      <module name="sb-auth-srv" target="1.8" />
+      <module name="sb-auth-srv (1)" target="1.8" />
+      <module name="sb-auth-ui" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
