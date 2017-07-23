@@ -22,16 +22,16 @@ public class User  {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "ID")
     Long id;
 
-    @Column(name = "name")
+    @Column(name = "NAME")
     String name;
 
-    @Column(name = "Description")
+    @Column(name = "DESCRIPTION")
     String description;
 
-   // public void User() {}
+
 }
 
 //@JsonComponent

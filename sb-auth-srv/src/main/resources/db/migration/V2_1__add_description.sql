@@ -1,4 +1,0 @@
-
-
-ALTER TABLE SB_USER22
-ADD Description VARCHAR (200);
