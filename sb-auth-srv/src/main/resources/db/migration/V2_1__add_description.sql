@@ -1,0 +1,4 @@
+
+
+ALTER TABLE SB_USER
+ADD Description VARCHAR (200);
