@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class StaticController {
 
 
-    @RequestMapping("/")
+    @RequestMapping("/i")
     public String index() {
         return "index.html";
     }

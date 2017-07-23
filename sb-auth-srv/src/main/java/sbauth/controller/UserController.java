@@ -12,6 +12,7 @@ import java.util.List;
  * Created by quchy on 22/07/2017.
  */
 
+@SuppressWarnings("SpringAutowiredFieldsWarningInspection")
 @RestController
 @RequestMapping("/api/")
 public class UserController {
@@ -23,19 +24,6 @@ public class UserController {
     // Get list
     @RequestMapping(value = "users", method = RequestMethod.GET)
     public List<User> list() {
-        /* List<String> res = new ArrayList<>();
-        res.add("User1");
-        res.add("User2");
-        res.add("User3");
-        res.add("User4");
-        return res; */
-
-        List<User> u = userRepo.findAll();
-
-        User u2 = new User();
-        u2.name = "aaaaa";
-                userRepo.saveAndFlush(u2);
-
         return userRepo.findAll();
     }
 

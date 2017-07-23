@@ -1,5 +1,8 @@
 package sbauth.model;
 
+import lombok.*;
+import lombok.extern.java.Log;
+
 import javax.persistence.*;
 
 /**
@@ -8,12 +11,27 @@ import javax.persistence.*;
 
 @Entity
 @Table( name=  "SB_USER")
-public class User {
+@Data
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@AllArgsConstructor
+@Log
+@Builder
+public class User  {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
-    public Long id;
+    @Column(name = "id")
+    Long id;
 
+    @Column(name = "name")
+    String name;
 
-    public String name;
+    @Column(name = "Description")
+    String description;
+
+   // public void User() {}
 }
+
+//@JsonComponent

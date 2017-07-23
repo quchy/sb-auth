@@ -24,11 +24,15 @@ public class PersistenceConfiguration {
     }
 
 
+
     @Bean
     @ConfigurationProperties(prefix = "datasource.flyway")
     @FlywayDataSource
     public DataSource flywaydataSource() {
         return DataSourceBuilder.create().build();
     }
+
+
+
 
 }
