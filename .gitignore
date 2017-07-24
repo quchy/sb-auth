@@ -86,3 +86,7 @@ typings/
 /sb-auth.iml
 /sb-auth-srv/sb-auth-srv.iml
 /sb-auth-ui/sb-auth-ui.iml
+/.idea/
+/sb-auth-srv/target/
+/.idea/sqldialects.xml
+/.idea/modules.xml
