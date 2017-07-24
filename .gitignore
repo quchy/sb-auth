@@ -90,3 +90,5 @@ typings/
 /sb-auth-srv/target/
 /.idea/sqldialects.xml
 /.idea/modules.xml
+/.idea/misc.xml
+/.idea/dictionaries/
