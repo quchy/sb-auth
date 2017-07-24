@@ -65,7 +65,6 @@ logging:
     org.flywaydb.core.Flyway.*: debug
  #   org.springframework.beans.factory: debug
 
-
 debug: true
 trace: false
 
