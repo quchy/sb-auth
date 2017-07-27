@@ -2,7 +2,13 @@
 
 server:
   port: 80
+  context-path: /v1/
+management:
+  context-path: /admin
+  port: 9001
 
+#logging.level.org.springframework.web: DEBUG
+#logging.level.org.hibernate: DEBUG
 
 
 spring:
@@ -17,14 +23,24 @@ spring:
     url: jdbc:h2:file:~/sb-auth/sb-auth-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     password:
- #   schema: SB-SCHEMA
- #   driver-class-name: org.h2.Driver
-
+    tomcat:
+      max-wait: 5000
+      max-active: 5
+      test-on-borrow: true
   jpa:
     generate-ddl: true
     hibernate:
       ddl-auto:  create
+      dialect: org.hibernate.dialect.H2Dialect
     show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+    database: h2
+
+hibernate:
+  dialect: org.hibernate.dialect.H2Dialect
+
 
 
 
@@ -38,8 +54,6 @@ spring:
 #   validate-on-migrate: false
 #   locations: classpath:/db/migration
 #   check-location: true
-
-
 
 
 #flyway:
@@ -63,6 +77,8 @@ logging:
     org.hibernate.SQL: debug
     org.flywaydb.core.Flyway: debug
     org.flywaydb.core.Flyway.*: debug
+    org.hibernate.engine.jdbc: debug
+    org.hibernate.engine.jdbc.*: debug
  #   org.springframework.beans.factory: debug
 
 debug: true

@@ -13,17 +13,14 @@ import javax.persistence.*;
 @Table( name=  "SB_USER")
 @Data
 @ToString
-@EqualsAndHashCode
 @NoArgsConstructor
-@AllArgsConstructor
-@Log
-@Builder
 public class User  {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
     @Column(name = "ID")
     Long id;
+
 
     @Column(name = "NAME")
     String name;
@@ -34,4 +31,3 @@ public class User  {
 
 }
 
-//@JsonComponent

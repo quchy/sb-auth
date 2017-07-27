@@ -38,10 +38,17 @@ public class UserControllerTest {
 
     @Before
     public void setUp() throws Exception {
+
+        User u1 = new User(); u1.setId(10L); u1.setName("Test Name User1");
+        User u2 = new User(); u1.setId(20L); u1.setName("Test Name User2");
+        User u3 = new User(); u1.setId(30L); u1.setName("Test Name User3");
+
         origUsers = new ArrayList<>();
-        origUsers.add(new User(10L,"Test Name User1", "Test descr. User 1"));
-        origUsers.add(new User(20L,"Test Name User2", "Test descr. User 2"));
-        origUsers.add(new User(30L,"Test Name User3", "Test descr. User 3"));
+
+        origUsers.add(u1);
+        origUsers.add(u2);
+        origUsers.add(u3);
+
     }
 
     @After
