@@ -12,7 +12,7 @@ import java.util.List;
  * Created by quchy on 22/07/2017.
  */
 
-@SuppressWarnings("SpringAutowiredFieldsWarningInspection")
+//@SuppressWarnings("SpringAutowiredFieldsWarningInspection")
 @RestController
 @RequestMapping("/api/")
 public class UserController {

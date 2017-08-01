@@ -12,11 +12,11 @@
     <name>sb-auth-srv</name>
     <description>Spring boot based oauth login</description>
 
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.4.RELEASE</version>
+        <relativePath></relativePath>
     </parent>
 
     <properties>
@@ -85,7 +85,7 @@
     <build>
         <resources>
             <resource>
-                <directory>../sb-auth-ui/app</directory>
+                <directory>../sb-auth-ui/dist</directory>
                 <targetPath>static</targetPath>
             </resource>
         </resources>

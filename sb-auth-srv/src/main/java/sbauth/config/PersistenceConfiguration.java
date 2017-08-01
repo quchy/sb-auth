@@ -2,6 +2,7 @@ package sbauth.config;
 
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,10 +12,16 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
+@EnableConfigurationProperties
 @EnableAutoConfiguration
 @ComponentScan
-
+//@PropertySource("classpath:/application.yml")
 public class PersistenceConfiguration {
+/*
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 
-
+    */
 }
