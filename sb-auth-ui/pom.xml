@@ -71,12 +71,13 @@
 
             <execution>
               <id>Run ng build</id>
-              <phase>package</phase>
+              <phase>install</phase>
               <goals>
                 <goal>exec</goal>
               </goals>
               <configuration>
-                <executable>node_modules/@angular/cli/bin/ng</executable>
+                <executable>ng</executable>
+                <!-- executable>node_modules/@angular/cli/bin/ng</executable -->
                 <arguments>
                   <argument>build</argument>
                 </arguments>
