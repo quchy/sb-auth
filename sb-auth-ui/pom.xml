@@ -56,19 +56,33 @@
           <version>1.6.0</version>
           <executions>
             <execution>
+              <id>npm install</id>
+              <phase>compile</phase>
+              <goals>
+                <goal>exec</goal>
+              </goals>
+              <configuration>
+                <executable>npm</executable>
+                <arguments>
+                  <argument>install</argument>
+                </arguments>
+              </configuration>
+            </execution>
+
+            <execution>
               <id>Run ng build</id>
               <phase>package</phase>
               <goals>
                 <goal>exec</goal>
               </goals>
+              <configuration>
+                <executable>ng</executable>
+                <arguments>
+                  <argument>build</argument>
+                </arguments>
+              </configuration>
             </execution>
           </executions>
-          <configuration>
-            <executable>ng</executable>
-            <arguments>
-              <argument>build</argument>
-            </arguments>
-          </configuration>
         </plugin>
 
 
