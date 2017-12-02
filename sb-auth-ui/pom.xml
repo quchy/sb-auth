@@ -57,7 +57,7 @@
           <executions>
             <execution>
               <id>npm install</id>
-              <phase>compile</phase>
+              <phase>generate-sources</phase>
               <goals>
                 <goal>exec</goal>
               </goals>
@@ -76,7 +76,7 @@
                 <goal>exec</goal>
               </goals>
               <configuration>
-                <executable>ng</executable>
+                <executable>node_modules/@angular/cli/bin/ng</executable>
                 <arguments>
                   <argument>build</argument>
                 </arguments>
