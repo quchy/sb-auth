@@ -7,6 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sb-auth-srv" />
+      </profile>
+      <profile name="Annotation profile for sb-auth" enabled="true">
+        <sourceOutputDir name="dist/generated-sources/annotations" />
+        <sourceTestOutputDir name="dist/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="sb-auth-ui" />
       </profile>
     </annotationProcessing>
