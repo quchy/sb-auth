@@ -76,8 +76,8 @@
                 <goal>exec</goal>
               </goals>
               <configuration>
-                <executable>ng</executable>
-                <!-- executable>node_modules/@angular/cli/bin/ng</executable -->
+                <!-- executable>ng</executable -->
+                <executable>node_modules/@angular/cli/bin/ng</executable>
                 <arguments>
                   <argument>build</argument>
                 </arguments>
