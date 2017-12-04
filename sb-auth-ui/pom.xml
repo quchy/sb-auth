@@ -20,11 +20,11 @@
 
     <dependencies>
 
-        <dependency>
+        <!-- dependency>
             <groupId>org.primefaces.themes</groupId>
             <artifactId>afterdark</artifactId>
             <version>1.0.10</version>
-        </dependency>
+        </dependency -->
 
       <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
       <dependency>
